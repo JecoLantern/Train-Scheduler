@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio JecoLantern</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style1.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../about.html">Jeric B. Ayonke, MLS(ASCP<sup>i</sup>)<sup>CM</sup></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                                          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4 text-center text-white knockout animated zoomIn slower">A Firebase Train Scheduler</h1>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0 lead nowViewing animated slideInUp slower delay-5s">Sometimes that light at the end of the tunnel is a train!</p>
+                        <footer class="blockquote-footer text-dark animated slideInUp slower delay-5s">Charles Barkley<cite title="Source Title"></cite></footer>
+                    </blockquote>
+                    <hr class="my-4">
+                    <blockquote class="blockquote text-left quote">
+                        <p class="mb-0 text-white animated slideInRight slower delay-5s">The only way to be sure of catching a train is to miss the one before it.</p>
+                        <footer class="blockquote-footer text-white animated slideInRight slower delay-5s">Gilbert K. Chesterton<cite title="Source Title"></cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <blockquote class="blockquote text-right quote">
+                    <p class="mb-0 text-white animated slideInLeft slower delay-5s">The trains always arrive at your station. The question is which one to take?</p>
+                    <footer class="blockquote-footer text-white animated slideInLeft slower delay-5s">Mehmet Murat ildan<cite title="Source Title"></cite></footer>
+                    </blockquote>
+                    <div class="panel panel-default animated fadeIn slower delay-5s">
+                        <div class="panel-body train_info bg-white mb-3 table-responsive">
+                            <h3 class="nowViewing">Now Viewing: Current Train Schedule*</h3>
+                            <table class="table-hover table table-bordered" id="train_table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th class="h5">Train Name</th>
+                                        <th class="h5">Destination</th>
+                                        <th class="h5">Frequency (in minutes)</th>
+                                        <th class="h5">Next Arrival</th>
+                                        <th class="h5">Minutes Away</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="my-4">
+                        <p class="quote text-white">*Note: Page Reloads every minute. Please wait to update.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="panel panel-default border border-dark animated fadeIn slower delay-5s">
+                        <div class="panel-body train_info bg-white mb-3">
+                            <form>
+                                <h4 class="text-center">Add a Train?</h4>
+                                <div class="form-group">
+                                    <label>Train Name:</label>
+                                    <input type="text" class="form-control" id="train_name_input" placeholder="Enter Train Name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Destination:</label>
+                                    <input type="text" class="form-control" id="destination_input" placeholder="Where to go?">
+                                </div>
+                                <div class="form-group">
+                                    <label>First Train Time: (hh:mm - Military Time)</label>
+                                    <input type="text" class="form-control" id="first_train_input" placeholder="Time of First Trip">
+                                </div>
+                                <div class="form-group">
+                                    <label>Frequency: (in minutes)</label>
+                                    <input type="text" class="form-control" id="frequency_input" placeholder="10, 20, 30...">
+                                </div>
+                                <button type="submit" class="btn border btn-success button mb-3 p-3 btn-lg btn-block" id="add_new_train">Submit!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </main>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+        <script src="assets/javascript/moment.js"></script>
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
+

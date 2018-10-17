@@ -1,0 +1,132 @@
+.jumbotron {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0 !important;
+    background: transparent !important;
+
+}
+
+hr.my-4 {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    border-top: 1px solid white;
+}
+
+body {
+    background-image: url("../images/bg-train-wallpaper.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.knockout {
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    color: red;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: arial, helvetica;
+    /* width: 100vw; */
+    /* margin: 50px auto; */
+    text-align: center;
+
+}
+
+.nowViewing {
+    text-shadow:
+		-1px -1px 0 gray,
+		1px -1px 0 gray,
+		-1px 1px 0 gray,
+		1px 1px 0 gray;
+}
+
+.quote {
+    text-shadow:
+		-1px -1px 0 black,
+		1px -1px 0 black,
+		-1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.bg-white {
+    opacity: 0.9;
+}
+
+.mb-3 {
+    margin-bottom: 0 !important;
+}
+
+div.panel-body {
+    padding: 1rem;
+}
+
+.navbar {
+    padding: 0rem 3rem 0rem 3rem;
+}
+.bg-light {
+    background: #ffffff;
+    border: #cccccc;
+}
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4aaaa5;
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 0 0 0;
+}
+  
+.nav-item, .nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    padding: 0.625rem 0 0.625rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar-brand {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: #4aaaa5;
+        color: #ffffff !important;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 0 0 0;
+    }
+    .navbar {
+        padding: 0;
+        width: 100%;
+    }
+    body {
+        background-position: top left;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+    .knockout{
+        font-size: 2rem;
+    }
+    blockquote, input, p {
+        font-size: 0.6rem !important;
+    }
+    .nowViewing {
+        font-size: 1.2rem;
+    }
+    .h5, td, div.panel-body {
+        font-size: .6rem;
+    }
+    .trashCan {
+        width: 15px;
+        height: 15px;
+    }
+    h4, .btn-lg {
+        font-size: 1rem !important;
+    }
+    .train_info{
+        align-self: center
+    }
+}
