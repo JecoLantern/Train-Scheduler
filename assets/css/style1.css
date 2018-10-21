@@ -91,15 +91,16 @@ div.panel-body {
 @media only screen and (max-width: 640px) {
     .navbar-brand {
         font-family: Georgia, 'Times New Roman', Times, serif;
-        background: #4aaaa5;
+        background: #1c486b;
         color: #ffffff !important;
         font-size: 1.2rem;
         font-weight: bolder;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 0.5rem 1rem 0.5rem;
         margin: 0 0 0 0;
     }
     .navbar {
         padding: 0;
+        padding-right: 1rem;
         width: 100%;
     }
     body {
